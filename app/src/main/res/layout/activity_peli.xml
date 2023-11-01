@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.peli.PeliActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ap_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white_brand"
+            android:padding="10dp"
+            android:text="Login PeduliLindungi untuk dapat mengakses Scan QR-Code PeduliLindungi"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ap_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Nama (Sesuai KTP)"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_tv_title" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ap_til_name"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_tv_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ap_mact_name"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nama Sesuai KTP"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp"
+                android:textAllCaps="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/ap_tv_nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="NIK"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_til_name" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ap_til_nik"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:helperText="Minimal 16 digits"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_tv_nik">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ap_mact_nik"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan NIK"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/ap_tv_privacy_policy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default"
+            android:buttonTint="@color/brand2"
+            android:text="Contoh"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_til_nik" />
+
+        <Button
+            android:id="@+id/ap_btn_next"
+            style="@style/ButtonDefault.Big"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/margin_padding_default"
+            android:text="lanjutkan"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_tv_privacy_policy" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default"
+            android:src="@drawable/img_peli"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ap_btn_next" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

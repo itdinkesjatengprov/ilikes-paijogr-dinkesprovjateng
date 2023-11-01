@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_brand"
+    tools:context=".ui.fragment.license.LicenseFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/license_cv_strttk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default">
+
+            <TextView
+                android:id="@+id/license_tv_strttk_title"
+                style="@style/style_text_menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRTTK"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/license_tv_strttk_status"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/license_tv_strttk_status" />
+
+            <TextView
+                android:id="@+id/license_tv_strttk_status"
+                style="@style/style_text_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_license_status_nothing"
+                android:gravity="center"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Belum Ada" />
+
+            <TextView
+                android:id="@+id/license_tv_strttk_id"
+                style="@style/style_text_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/brand2"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_strttk_status"
+                tools:text="12234567890124124" />
+
+            <TextView
+                android:id="@+id/license_tv_strttk_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:background="@drawable/bg_license_process_yellow"
+                android:textColor="@color/basic_yellow"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_strttk_id"
+                tools:text="Pemberkasan" />
+
+            <ProgressBar
+                android:id="@+id/license_pb_strttk"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="@id/license_tv_strttk_process"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/license_tv_strttk_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/license_cv_tubel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:visibility="gone"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/license_cv_strttk">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default">
+
+            <TextView
+                android:id="@+id/license_tv_tubel_title"
+                style="@style/style_text_menu_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tugas Belajar (Tubel)"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/license_tv_tubel_status"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/license_tv_tubel_status"
+                app:layout_constraintTop_toTopOf="@id/license_tv_tubel_status" />
+
+            <TextView
+                android:id="@+id/license_tv_tubel_status"
+                style="@style/style_text_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_license_status_nothing"
+                android:gravity="center"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Belum Ada" />
+
+            <TextView
+                android:id="@+id/license_tv_tubel_id"
+                style="@style/style_text_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/brand2"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_tubel_status"
+                tools:text="12234567890124124" />
+
+            <TextView
+                android:id="@+id/license_tv_tubel_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:background="@drawable/bg_license_process_yellow"
+                android:textColor="@color/basic_yellow"
+                android:visibility="invisible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_tubel_id"
+                tools:text="Pemberkasan" />
+
+            <ProgressBar
+                android:id="@+id/license_pb_tubel"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="@id/license_tv_tubel_process"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/license_tv_tubel_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/license_cv_rs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/license_cv_tubel">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default">
+
+            <TextView
+                android:id="@+id/license_tv_rs_title"
+                style="@style/style_text_menu_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Permohonan Ijin Berusaha RS (Admin di sie Yankes Rujukan)"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/license_tv_rs_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_rs_title"
+                android:text="Input Permohonan Ijin Berusaha (BARU) Rumah Sakit Kelas B di Jawa Tengah"
+                android:drawablePadding="@dimen/margin_padding_default"
+                android:drawableRight="@drawable/ic_chevron_right"/>
+
+            <TextView
+                android:id="@+id/license_tv_rs_perpanjangan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_rs_new"
+                android:text="Input Permohonan Ijin Berusaha (PERPANJANGAN) Rumah Sakit Kelas di Jawa Tengah"
+                android:drawablePadding="@dimen/margin_padding_default"
+                android:drawableRight="@drawable/ic_chevron_right"/>
+
+            <TextView
+                android:id="@+id/license_tv_rs_perubahan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_rs_perpanjangan"
+                android:text="Input Permohonan Ijin Berusaha (PERUBAHAN) Rumah Sakit Kelas di Jawa Tengah"
+                android:drawablePadding="@dimen/margin_padding_default"
+                android:drawableRight="@drawable/ic_chevron_right"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/license_cv_labkes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/license_cv_rs">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_default">
+
+            <TextView
+                android:id="@+id/license_tv_labkes_title"
+                style="@style/style_text_menu_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Permohonan Ijin Berusaha Laboratorium Kesehatan (Admin di sie Standarisasi Pelayanan dan Jamkes)"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/license_tv_labkes_new"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_labkes_title"
+                android:text="Input Permohonan Ijin Berusaha (BARU) Labkes di Jawa Tengah"
+                android:drawablePadding="@dimen/margin_padding_default"
+                android:drawableRight="@drawable/ic_chevron_right"/>
+
+            <TextView
+                android:id="@+id/license_tv_labkes_perpanjangan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_labkes_new"
+                android:text="Input Permohonan Ijin Berusaha (PERPANJANGAN) Labkes di Jawa Tengah"
+                android:drawablePadding="@dimen/margin_padding_default"
+                android:drawableRight="@drawable/ic_chevron_right"/>
+
+            <TextView
+                android:id="@+id/license_tv_labkes_perubahan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/license_tv_labkes_perpanjangan"
+                android:text="Input Permohonan Ijin Berusaha (PERUBAHAN) Labkes di Jawa Tengah"
+                android:drawablePadding="@dimen/margin_padding_default"
+                android:drawableRight="@drawable/ic_chevron_right"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

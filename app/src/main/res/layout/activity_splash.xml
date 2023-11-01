@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    tools:context=".ui.activity.splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_iv_ilikes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/img_paijo_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_default"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/app_subname"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_iv_ilikes" />
+
+    <TextView
+        android:id="@+id/splash_tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Versi X.XX"
+        android:textColor="@color/dark_grey"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_iv_jateng"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/img_jateng"
+        app:layout_constraintBottom_toTopOf="@id/splash_tv_version"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinas Kesehatan\nProvinsi Jawa Tengah"
+        android:textSize="13sp"
+        android:id="@+id/splash_tv_dinkes"
+        app:layout_constraintBottom_toBottomOf="@id/splash_iv_jateng"
+        app:layout_constraintLeft_toRightOf="@id/splash_iv_jateng"
+        app:layout_constraintTop_toTopOf="@id/splash_iv_jateng" />
+
+    <ImageView
+        android:id="@+id/splash_iv_bsre"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:src="@drawable/img_logo_bsre"
+        app:layout_constraintLeft_toRightOf="@id/splash_tv_dinkes"
+        app:layout_constraintBottom_toTopOf="@id/splash_tv_version"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/splash_iv_jateng"
+        app:layout_constraintLeft_toLeftOf="@id/splash_iv_jateng" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

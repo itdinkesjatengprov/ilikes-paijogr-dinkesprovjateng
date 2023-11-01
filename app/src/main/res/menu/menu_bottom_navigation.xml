@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Beranda"
+        android:icon="@drawable/ic_home"/>
+
+<!--    <item-->
+<!--        android:id="@+id/serviceFragment"-->
+<!--        android:title="Layanan Kesehatan"-->
+<!--        android:icon="@drawable/ic_service"/>-->
+
+    <item
+        android:id="@+id/licenseFragment"
+        android:title="Perijinan"
+        android:icon="@drawable/ic_license"/>
+
+    <item
+        android:id="@+id/profilFragment"
+        android:title="Profil"
+        android:icon="@drawable/ic_profil"/>
+
+</menu>

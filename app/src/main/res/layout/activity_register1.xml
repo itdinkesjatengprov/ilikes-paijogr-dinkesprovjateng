@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.register.Register1Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/reg_btn_google"
+            style="@style/ButtonLink.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_logo_google_48dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Daftar dengan Google"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:text="atau"
+            android:textColor="@color/dark_grey"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/reg_tv_nik"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_btn_google" />
+
+        <TextView
+            android:id="@+id/reg_tv_nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:text="NIK"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintBottom_toTopOf="@id/reg_til_nik"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_btn_google"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_til_nik"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/reg_tv_phone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_tv_nik"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_mact_nik"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan NIK"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/reg_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="No. HP"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintBottom_toTopOf="@id/reg_til_phone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_til_nik"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_til_phone"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/reg_tv_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_tv_phone"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_mact_phone"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan No. HP"
+                android:inputType="number"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/reg_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Nama"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintBottom_toTopOf="@id/reg_til_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_til_phone"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_til_name"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toTopOf="@id/reg_tv_password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_tv_name"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_mact_name"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nama"
+                android:inputType="textPersonName"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/reg_tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_20"
+            android:text="password"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintBottom_toTopOf="@id/reg_til_password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_til_name"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_til_password"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintBottom_toTopOf="@id/reg_til_password_confirmation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_tv_password"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_mact_password"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Password"
+                android:inputType="textPassword"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_til_password_confirmation"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintBottom_toTopOf="@id/reg_btn_register"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_til_password"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_mact_password_confirmation"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Ulang Password"
+                android:inputType="textPassword"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/reg_btn_register"
+            style="@style/ButtonDefault.Big"
+            android:layout_width="0dp"
+            android:layout_marginHorizontal="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_20"
+            android:text="Daftar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_til_password_confirmation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

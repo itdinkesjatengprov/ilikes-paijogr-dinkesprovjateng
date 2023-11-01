@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="go.id.dinkesjatengprov.ilikes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_paijo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_paijo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ILikes"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.activity.telemedicine.TelemedicineActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.activity.forgotPassword.ForgotPasswordActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ui.activity.webview.ZoomImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.pmi.PmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.license.strttk.ResultStrttkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.license.strttk.HistoryStrttkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.license.uploadDocument.DocumentUploadPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.psc.PscReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.psc.PscActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.peli.PeliResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.peli.PeliScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.peli.PeliActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.license.tubel.DocumentNewTubelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.license.tubel.FormTubelActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.license.tubel.MainTubelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.webview.WebviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ILikes.NoActionBar" />
+        <activity
+            android:name=".ui.activity.license.uploadDocument.DocumentUploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.license.strttk.DocumentNewStrttkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.license.strttk.FormStrttkActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.license.strttk.MainStrttkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.home.Home2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.consultation.ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.treatment.TreatmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService9Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService8Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService7Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService6Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService5Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.registerService.RegisterService1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.register.Register4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.register.Register3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.register.Register2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.register.Register1Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ILikes.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.activity.splash.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ILikes.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_path" />
+        </provider>
+    </application>
+
+</manifest>

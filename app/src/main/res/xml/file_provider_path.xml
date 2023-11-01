@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="my_images"
+        path="Android/data/go.id.dinkesjatengprov.ilikes/files/Pictures" />
+    <external-path
+        name="pdf"
+        path="Android/data/go.id.dinkesjatengprov.ilikes/files/" />
+    <!-- replace com.androidwave.filepicker with your package name -->
+</paths>
+

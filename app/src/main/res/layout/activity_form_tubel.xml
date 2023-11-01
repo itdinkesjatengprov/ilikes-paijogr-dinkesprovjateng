@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.license.tubel.FormTubelActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/afs_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Tipe Dokumen"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/afs_til_type"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:endIconDrawable="@drawable/ic_chevron_down"
+            app:endIconMode="custom"
+            app:endIconTint="@color/light_brand"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_type">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afs_mact_type"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="Pilih Tipe"
+                android:inputType="none"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/afs_tv_nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="NIK"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_til_type" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/afs_til_nik"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:helperText="Minimal 16 digits"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_nik">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afs_mact_nik"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan NIK"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/afs_tv_nip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="NIP"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_til_nik" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/afs_til_nip"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:helperText="Minimal 18 digits"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_nip">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afs_mact_nip"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan NIP"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="18"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/afs_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Nama (Sesuai KTP)"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_til_nip" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/afs_til_name"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afs_mact_name"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Nama"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/afs_tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Jenis Kelamin"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_til_name" />
+
+        <RadioGroup
+            android:id="@+id/afs_rg_sex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_padding_default"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_sex">
+
+            <RadioButton
+                android:id="@+id/afs_rb_man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/brand2"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/afs_rb_women"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/brand2"
+                android:text="Perempuan" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/afs_tv_place_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Tempat Lahir"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_rg_sex" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/afs_til_place_birth"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_place_birth">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afs_mact_place_birth"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Tempat Lahir"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/afs_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_padding_default"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Tanggal Lahir"
+            android:textColor="@color/ghost_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_til_place_birth" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/afs_til_date"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:endIconDrawable="@drawable/ic_calendar"
+            app:endIconMode="custom"
+            app:endIconTint="@color/light_brand"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_tv_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/afs_mact_date"
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:hint="dd/MM/yyyy"
+                android:inputType="none"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/afs_btn_create"
+            style="@style/ButtonDefault.Big"
+            android:layout_width="0dp"
+            android:layout_margin="@dimen/margin_padding_default"
+            android:text="Buat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/afs_til_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

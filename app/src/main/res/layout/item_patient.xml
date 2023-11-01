@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ip_cl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:padding="@dimen/margin_padding_default">
+
+    <ImageView
+        android:id="@+id/ip_iv_age"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_adult"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ip_tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@id/ip_iv_age"
+        app:layout_constraintRight_toLeftOf="@id/ip_iv_age"
+        app:layout_constraintTop_toTopOf="@id/ip_iv_age"
+        tools:text="14th" />
+
+    <TextView
+        android:id="@+id/ip_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/inter_semibold"
+        android:singleLine="true"
+        android:textColor="@color/brand2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ip_iv_age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ip_tv_age"
+        app:layout_constraintTop_toTopOf="@id/ip_iv_age"
+        tools:text="Michelle Nasution" />
+
+    <TextView
+        android:id="@+id/ip_tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/ghost_grey"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ip_iv_age"
+        tools:text="Jl. Cendrawasih 13, Kota Semarang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

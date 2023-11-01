@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ild_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/bg_soft_brand"
+    android:backgroundTint="@color/white_brand"
+    android:padding="@dimen/margin_padding_default"
+    app:cornerRadius="10dp">
+
+    <TextView
+        android:id="@+id/ild_tv_name"
+        style="@style/style_text_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_padding_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ild_iv_upload"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Surat pernyataan memiliki tempat praktik" />
+
+    <ImageView
+        android:id="@+id/ild_iv_upload"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_upload"
+        app:layout_constraintBottom_toBottomOf="@id/ild_tv_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/ild_barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ild_tv_name, ild_iv_upload" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ild_cl_file"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_soft_brand"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ild_barrier">
+
+        <TextView
+            android:id="@+id/ild_tv_filename"
+            style="@style/style_text_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="asdfghjklfghj.pdf" />
+
+        <TextView
+            android:id="@+id/ild_tv_note"
+            style="@style/style_text_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brand2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ild_tv_filename"
+            tools:text="asdfghjklfghj.pdf" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

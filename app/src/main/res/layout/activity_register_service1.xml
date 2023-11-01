@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.registerService.RegisterService1Activity">
+
+    <View
+        android:id="@+id/reg_view_progress"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/brand2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.1" />
+
+    <Button
+        android:id="@+id/reg_btn_add_new_patient"
+        style="@style/ButtonDefault.Big"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:backgroundTint="@color/soft_brand"
+        android:drawableLeft="@drawable/ic_user_add_fill"
+        android:text="Tambah Data Pasien Baru"
+        android:textAllCaps="false"
+        android:textColor="@color/brand2"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_view_progress" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_til_search"
+        style="@style/TextInputLayout.Default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_default"
+        app:endIconDrawable="@drawable/ic_search"
+        app:endIconMode="custom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_btn_add_new_patient"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_mact_search"
+            style="@style/TextInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pencarian"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingVertical="12dp"
+            android:paddingStart="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reg_rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_padding_default"
+        app:layout_constraintBottom_toTopOf="@id/reg_btn_select_patient"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_til_search"
+        tools:listitem="@layout/item_patient" />
+
+    <Button
+        android:id="@+id/reg_btn_select_patient"
+        style="@style/ButtonDefault.Big"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:text="Pilih Pasien"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

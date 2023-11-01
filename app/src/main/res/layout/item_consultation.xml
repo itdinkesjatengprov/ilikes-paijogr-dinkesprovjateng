@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_padding_default"
+    android:layout_marginTop="@dimen/margin_padding_default">
+
+    <ImageView
+        android:id="@+id/icons_iv"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/img_halodoc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/icons_tv_name"
+        style="@style/style_text_menu_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_default"
+        android:textColor="@color/brand2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/icons_tv_consultation"
+        app:layout_constraintLeft_toRightOf="@id/icons_iv"
+        app:layout_constraintTop_toTopOf="@id/icons_iv"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Halodoc" />
+
+    <TextView
+        android:id="@+id/icons_tv_consultation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_default"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_soft_brand"
+        android:backgroundTint="@color/basic_soft_blue"
+        android:paddingHorizontal="@dimen/margin_padding_default"
+        android:text="Konsultasi"
+        android:textColor="@color/basic_blue"
+        app:layout_constraintBottom_toBottomOf="@id/icons_iv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/icons_iv"
+        app:layout_constraintRight_toLeftOf="@id/icons_tv_medicine"
+        app:layout_constraintTop_toBottomOf="@id/icons_tv_name" />
+
+    <TextView
+        android:id="@+id/icons_tv_medicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_soft_brand"
+        android:backgroundTint="@color/basic_soft_green"
+        android:paddingHorizontal="@dimen/margin_padding_default"
+        android:text="Obat"
+        android:textColor="@color/basic_green"
+        app:layout_constraintBottom_toBottomOf="@id/icons_tv_consultation"
+        app:layout_constraintLeft_toRightOf="@id/icons_tv_consultation"
+        app:layout_constraintRight_toLeftOf="@id/icons_tv_medicine_redeem"
+        app:layout_constraintTop_toTopOf="@id/icons_tv_consultation" />
+
+    <TextView
+        android:id="@+id/icons_tv_medicine_redeem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_soft_brand"
+        android:backgroundTint="@color/basic_soft_green"
+        android:paddingHorizontal="@dimen/margin_padding_default"
+        android:text="Tebus Obat"
+        android:textColor="@color/basic_green"
+        app:layout_constraintBottom_toBottomOf="@id/icons_tv_consultation"
+        app:layout_constraintLeft_toRightOf="@id/icons_tv_medicine"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/icons_tv_consultation" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_padding_default"
+        android:background="@color/soft_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icons_iv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

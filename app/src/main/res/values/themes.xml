@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ILikes.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/brand2</item>
+        <item name="colorPrimaryVariant">@color/darken_brand</item>
+        <item name="colorOnPrimary">@color/brand2</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/tosca</item>
+        <item name="colorSecondaryVariant">@color/darken_tosca</item>
+        <item name="colorOnSecondary">@color/brand2</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/pure_white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/TextView</item>
+    </style>
+
+    <style name="Theme.ILikes" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/brand2</item>
+        <item name="colorPrimaryVariant">@color/darken_brand</item>
+        <item name="colorOnPrimary">@color/brand2</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <!--Text Color Action Bar-->
+        <item name="android:textColorPrimary">@color/brand2</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/tosca</item>
+        <item name="colorSecondaryVariant">@color/darken_tosca</item>
+        <item name="colorOnSecondary">@color/brand2</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/pure_white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="displayOptions">showTitle</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="elevation">0dp</item>
+        <item name="titleTextStyle">@style/ActionBarStyle.TextStyle</item>
+        <item name="subtitleTextStyle">@style/ActionBarStyle.TextStyle</item>
+        <item name="background">@color/pure_white</item>
+        <item name="backgroundStacked">@color/pure_white</item>
+        <item name="backgroundSplit">@color/pure_white</item>
+    </style>
+
+    <style name="ActionBarStyle.TextStyle" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">@dimen/text_page_titles</item>
+    </style>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.registerService.RegisterService8Activity">
+
+    <View
+        android:id="@+id/reg_view_progress"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/brand2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reg_cl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_padding_default"
+        android:layout_marginTop="@dimen/margin_padding_default"
+        android:background="@drawable/bg_soft_brand"
+        android:padding="@dimen/margin_padding_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_view_progress">
+
+        <TextView
+            android:id="@+id/reg_tv_faskes_name"
+            style="@style/style_text_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            android:textStyle="normal|bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Balai Kesehatan Indera" />
+
+        <TextView
+            android:id="@+id/reg_tv_doctor_name"
+            style="@style/style_text_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_tv_faskes_name"
+            tools:text="Dr. Tirta" />
+
+        <View
+            android:id="@+id/reg_view"
+            android:layout_width="0dp"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:background="@color/grey"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_tv_doctor_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reg_rv_schedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/reg_view"
+            tools:itemCount="7"
+            tools:listitem="@layout/item_schedule" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/reg_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_default"
+        android:layout_marginTop="@dimen/margin_padding_default"
+        android:text="Pilih Tanggal"
+        android:textColor="@color/ghost_grey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_cl" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_til_date"
+        style="@style/TextInputLayout.Default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:endIconDrawable="@drawable/ic_calendar"
+        app:endIconMode="custom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_tv_date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_mact_date"
+            style="@style/TextInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="dd/MM/yyyy"
+            android:inputType="none"
+            android:paddingVertical="12dp"
+            android:paddingStart="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/reg_btn_next"
+        style="@style/ButtonDefault.Big"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:text="Berikutnya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "tubel-upload-01",
+    "license_id": "tubel-01",
+    "document": {
+      "id": "strttk-syarat-01",
+      "name": "SCAN KTP",
+      "description": "Scan Data Kependudukan",
+      "type": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "document_type": "New",
+      "status": "ACTIVE",
+      "created_at": "2020-01-01 00:00:00",
+      "updated_at": "2020-01-01 00:00:00"
+    },
+    "link": "https://i.picsum.photos/id/42/700/1200.jpg?hmac=rENXRuxENnMFEK_2UjTlwLa-cYJjgctX3JH6UhDjC7o",
+    "status": "APPROVED",
+    "note": "",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  },
+  {
+    "id": "tubel-upload-02",
+    "license_id": "tubel-01",
+    "document": {
+      "id": "strttk-syarat-02",
+      "name": "SURAT REKOMENDASI KEPALA OPD",
+      "description": "SCAN Surat Rekomendasi dari Kepala OPD yang menerangkan bahwa program studi yang akan diambil merupakan kebutuhan OPD terkait;",
+      "type": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "document_type": "New",
+      "status": "ACTIVE",
+      "created_at": "2020-01-01 00:00:00",
+      "updated_at": "2020-01-01 00:00:00"
+    },
+    "link": "https://i.picsum.photos/id/585/700/1200.jpg?hmac=vQU_oEfDrjFmvWl4cLsjdi_FpIxvj9aFWhyjB8rOUW0",
+    "status": "REJECTED",
+    "note": "Untuk catatan kesalahan dari dokumen yang di upload,hanya admin/dinkes prov yang boleh mengubah catatan",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  },
+  {
+    "id": "tubel-upload-03",
+    "license_id": "tubel-01",
+    "document": {
+      "id": "strttk-syarat-03",
+      "name": "SURAT PENGANTAR INSTANSI",
+      "description": "SCAN Surat pengantar dari Instansi perihal permohonan Surat Rekomendasi Tugas Belajar yang ditujukan kepada Gubernur c.q. Kepala BKD Provinsi Jawa Tengah;",
+      "type": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "document_type": "New",
+      "status": "ACTIVE",
+      "created_at": "2020-01-01 00:00:00",
+      "updated_at": "2020-01-01 00:00:00"
+    },
+    "link": "https://i.picsum.photos/id/145/700/1200.jpg?hmac=3OQN0BIH023d0WtyekeGsRr09u8ZF4k_jX5UCOXUFOE",
+    "status": "",
+    "note": "Untuk catatan kesalahan dari dokumen yang di upload,hanya admin/dinkes prov yang boleh mengubah catatan",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  },
+  {
+    "id": "tubel-upload-04",
+    "license_id": "tubel-01",
+    "document": {
+      "id": "strttk-syarat-04",
+      "name": "SURAT KETERANGAN URAIAN TUGAS",
+      "description": "SCAN Surat keterangan uraian tugas calon peserta tugas belajar yang di tandatangani oleh Kepala OPD",
+      "type": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "document_type": "New",
+      "status": "ACTIVE",
+      "created_at": "2020-01-01 00:00:00",
+      "updated_at": "2020-01-01 00:00:00"
+    },
+    "link": "https://i.picsum.photos/id/145/700/1200.jpg?hmac=3OQN0BIH023d0WtyekeGsRr09u8ZF4k_jX5UCOXUFOE",
+    "status": "",
+    "note": "Untuk catatan kesalahan dari dokumen yang di upload,hanya admin/dinkes prov yang boleh mengubah catatan",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  }
+]

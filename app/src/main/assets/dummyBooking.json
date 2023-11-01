@@ -1,0 +1,86 @@
+{
+  "id": "asadw-as23s-as32asd-asdc23",
+  "code_booking": "BO-01234",
+  "queue_number": "1",
+  "status": "Booked|Canceled|Process",
+  "patient_identity": {
+    "nik": "3312341234XXXX",
+    "name": "Name",
+    "religion": "Islam",
+    "sex": "string",
+    "birth_date": "1990-12-31",
+    "education": "SMA",
+    "job": "Tani",
+    "phone": "08782323232",
+    "address_ktp": {
+      "province": {
+        "code" : 33,
+        "name" : "Jawa Tengah"
+      },
+      "city": {
+        "code" : 3327,
+        "name" : "Kota Semarang"
+      },
+      "district": {
+        "code" : 332712,
+        "name" : "Semarang Tengah"
+      },
+      "village": {
+        "code" : 33271201,
+        "name" : "Pekunden"
+      },
+      "rt": "1",
+      "rw": "12",
+      "address": "Jl. Raya Nomer 11"
+    },
+    "address_domicile": {
+      "province": {
+        "code" : 33,
+        "name" : "Jawa Tengah"
+      },
+      "city": {
+        "code" : 3327,
+        "name" : "Kota Semarang"
+      },
+      "district": {
+        "code" : 332712,
+        "name" : "Semarang Tengah"
+      },
+      "village": {
+        "code" : 33271201,
+        "name" : "Pekunden"
+      },
+      "rt": "1",
+      "rw": "12",
+      "address": "Jl. Raya Nomer 11"
+    }
+  },
+  "father": {
+    "nik": "3312341234XXXX",
+    "name": "Name",
+    "birth_date": "1990-12-31",
+    "job": "Pekerjaan"
+  },
+  "mother": {
+    "nik": "3312341234XXXX",
+    "name": "Name",
+    "birth_date": "1990-12-31",
+    "job": "Pekerjaan"
+  },
+  "health_care_service": {
+    "faskes": {
+      "id": "1",
+      "name": "Balkesmas Semarang",
+      "address": "Jl. Semarang",
+      "medical_record_number": "MRN/A/2020/01/01/01",
+      "clinic": "Klinik Umum",
+      "doctor": "dr.Strange"
+    },
+    "bpjs_number": "BPJS/A/2020/01/01/01",
+    "date": "2020-01-01",
+    "type": "BPJS",
+    "note": "Note"
+  },
+  "created_at": "2020-01-01 12:00:00",
+  "updated_at": "2020-01-01 12:00:00"
+}

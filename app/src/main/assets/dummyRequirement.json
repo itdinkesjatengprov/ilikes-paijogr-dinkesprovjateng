@@ -1,0 +1,41 @@
+[
+  {
+    "id": "strttk-syarat-01",
+    "name": "KTP/SIM/Paspor",
+    "description": "Scan Asli Kartu Tanda Penduduk / Surat Izin Mengemudi / Paspor",
+    "type": [
+      "image/jpeg",
+      "image/png"
+    ],
+    "document_type": "New",
+    "status": "ACTIVE",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  },
+  {
+    "id": "strttk-syarat-02",
+    "name": "Surat Pernyataan",
+    "description": "Surat pernyataan memiliki tempat praktik",
+    "type": [
+      "image/jpeg",
+      "image/png"
+    ],
+    "document_type": "New",
+    "status": "INACTIVE",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  },
+  {
+    "id": "strttk-syarat-03",
+    "name": "Surat Keterangan",
+    "description": "Surat keterangan sehat fisik dari dokter yang memiliki Surat Ijin Praktek",
+    "type": [
+      "image/jpeg",
+      "image/png"
+    ],
+    "document_type": "New",
+    "status": "ACTIVE",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  }
+]

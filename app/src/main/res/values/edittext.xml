@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ************************** T E X T I N P U T L A Y O U T ****************************** -->
+
+    <style name="TextInputLayoutFilled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">@color/dark_grey</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="strokeColor">@color/transparent</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="boxStrokeErrorColor">@color/basic_red</item>
+        <item name="errorTextColor">@color/basic_red</item>
+        <item name="hintTextColor">@color/ghost_grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="errorEnabled">true</item>
+        <item name="colorError">@color/basic_red</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+    </style>
+
+    <style name="TextInputLayoutOutline" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/dark_grey</item>
+        <item name="boxStrokeWidthFocused">1.5dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="strokeColor">@color/pure_white</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="boxStrokeErrorColor">@color/basic_red</item>
+        <item name="errorTextColor">@color/basic_red</item>
+        <item name="hintTextColor">@color/ghost_grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="errorEnabled">true</item>
+        <item name="colorError">@color/basic_red</item>
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+
+    <style name="TextInputLayout.Default" parent="TextInputLayoutOutline">
+        <item name="hintEnabled">false</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="errorEnabled">false</item>
+        <item name="endIconTint">@color/light_brand</item>
+        <item name="startIconTint">@color/light_brand</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/margin_padding_default</item>
+    </style>
+
+    <!-- ************************* T E X T I N P U T E D I T T E X T *************************** -->
+
+    <style name="TextInputEdittext" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.registerService.RegisterService7Activity">
+
+    <View
+        android:id="@+id/reg_view_progress"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/brand2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/reg_ll_faskes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:background="@color/soft_brand"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_view_progress">
+
+        <TextView
+            android:id="@+id/reg_tv_faskes_name"
+            style="@style/style_text_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_grey"
+            tools:text="Balai Kesehatan Masyarakat" />
+
+        <TextView
+            android:id="@+id/reg_tv_faskes_address"
+            style="@style/style_text_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/dark_grey"
+            tools:text="Jl. Kh Ahmad Dahlan No.39, Karangkidul, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50136" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_til_clinic"
+        style="@style/TextInputLayout.Default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_padding_default"
+        app:endIconDrawable="@drawable/ic_chevron_down"
+        app:endIconMode="dropdown_menu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_ll_faskes">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/reg_mact_clinic"
+            style="@style/TextInputEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="Pilih Klinik"
+            android:inputType="none"
+            android:paddingVertical="12dp"
+            android:paddingStart="10dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reg_rv_doctor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/margin_padding_default"
+        app:layout_constraintBottom_toTopOf="@id/reg_btn_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_til_clinic"
+        tools:listitem="@layout/item_doctor" />
+
+    <Button
+        android:id="@+id/reg_btn_next"
+        style="@style/ButtonDefault.Big"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:text="Berikutnya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ********************************* B U T T O N ***************************************** -->
+
+    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <!--Text Style USE dimen/style_text_button-->
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Button2" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <!--Text Style USE dimen/style_text_button-->
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:textAllCaps">true</item>m>
+    </style>
+    
+    <style name="ButtonDefault" parent="Button">
+        <item name="backgroundTint">@color/brand2</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonOutline" parent="Button2">
+        <item name="backgroundTint">@color/pure_white</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="android:textColor">@color/brand2</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/brand2</item>
+    </style>
+
+    <style name="ButtonGhost" parent="Button2">
+        <item name="backgroundTint">@color/white</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:textColor">@color/brand2</item>
+    </style>
+
+    <style name="ButtonLink" parent="Button2">
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:textColor">@color/brand2</item>
+    </style>
+
+    <!-- *************************** B U T T O N- S I Z E - B I G *********************************** -->
+
+    <style name="ButtonDefault.Big">
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="ButtonDefault.Big.DIsable">
+        <item name="android:layout_height">48dp</item>
+        <item name="backgroundTint">@color/grey</item>
+    </style>
+
+    <style name="ButtonOutline.Big">
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="ButtonGhost.Big">
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="ButtonLink.Big">
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!-- *************************** B U T T O N - S I Z E - N O R M A L *********************************** -->
+
+    <style name="ButtonDefault.Normal">
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="ButtonOutline.Normal">
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="ButtonGhost.Normal">
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="ButtonLink.Normal">
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <!-- *************************** B U T T O N - S I Z E - S M A L L *********************************** -->
+
+    <style name="ButtonDefault.Small">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonOutline.Small">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonGhost.Small">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonLink.Small">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

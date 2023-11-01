@@ -1,0 +1,89 @@
+package go.id.dinkesjatengprov.ilikes.helper
+
+const val TAG_API_REQUEST_FAILED = "API_REQUEST_FAILED"
+const val TAG_ROOM_REQUEST_FAILED = "ROOM_REQUEST_FAILED"
+const val TAG_DOWNLOAD_DOCUMNET = "DOWNLOAD_DOCUMENT"
+
+//DATA CONSTANT
+val MIN_PHONE_DIGIT = 10
+val MIN_NIk_DIGIT = 16
+
+//REQUEST CODE
+const val RC_PERMISSION = 500
+const val RC_CAMERA = 1050
+const val RC_GALLERY = 1051
+const val RC_UPLOAD_FILE = 1052
+const val RC_GPS = 1053
+const val RC_PICK_PDF = 1054
+
+//LAYANAN KESEHATAN
+const val BOOKING_MODEL = "BOOKING_MODEL"
+const val CLINIC_MODEL = "CLINIC_MODEL"
+const val DOCTOR_MODEL = "DOCTOR_MODEL"
+const val HEALTH_CARE = "HEALTH_CARE"
+const val PEDULI_LINDUNGI = "PEDULI_LINDUNGI"
+
+
+//PERIJINAN
+const val STRTTK = "STRTTK"
+const val TUBEL = "TUBEL"
+const val LICENSE = "LICENSE"
+const val LICENSE_DOCUMENT = "LICENSE_DOCUMENT"
+const val LICENSE_TYPE = "LICENSE_TYPE"
+const val LICENSE_STATUS = "LICENSE_STATUS"
+
+//REGION
+const val DOMICILE_AND_KTP = "DOMICILE_AND_KTP"
+const val PROVINCE = "PROVINCE"
+const val CITY = "CITY"
+const val DISTRICT = "DISTRICT"
+const val SUBDISTRICT = "SUBDISTRICT"
+
+//CATEGORY PSC
+const val PSC_ACCIDENT = "PSC_ACCIDENT"
+const val PSC_DISASTER = "PSC_DISASTER"
+const val PSC_REFERENCE = "PSC_REFERENCE"
+const val PSC_MATERNITY = "PSC_MATERNITY"
+const val PSC_CANCEL = "PSC_CANCEL"
+
+
+//MENU
+const val MENU_DAFTAR_BEROBAT = 1
+const val MENU_DAFTAR_CEK_LAB = 2
+const val MENU_PEDULI_LINDUNGI = 3
+const val MENU_DARURAT_119 = 4
+const val MENU_KONSULTASI = 5
+const val MENU_PERIJINAN_OSS = 6
+const val MENU_PENGADUAN_MASYARAKAT = 7
+const val MENU_SEMUA_FITUR = 8
+const val MENU_DATASET_DINKES = 9
+const val MENU_SPMBK = 10
+const val MENU_PROFIL_KESEHATAN = 11
+const val MENU_BUKU_SAKU = 12
+const val MENU_DATA_RS = 13
+const val MENU_TEMPAT_TIDUR_RS = 14
+const val MENU_LAPORGUB = 15
+const val MENU_LAPOR_SP4N = 16
+const val MENU_5NG = 17
+const val MENU_ECOHORT = 18
+const val MENU_MPDN = 19
+const val MENU_SITB = 20
+const val MENU_FASKES_VACCINE = 21
+const val MENU_PMI_CONTACT = 22
+const val MENU_PMI_BLOOD_STOCK = 23
+const val MENU_PMI_BLOOD_DONOR = 24
+const val MENU_PAKDE = 25
+const val MENU_INFORMATION_REQUEST = 26
+const val MENU_CORONA_JATENG = 27
+const val MENU_STOCK_OBAT = 28
+const val MENU_DINKES_BOX = 29
+const val MENU_KOMDAT_KOSMAS = 30
+const val MENU_SSO = 31
+const val MENU_SURVEY = 32
+const val MENU_KTKI = 33
+const val MENU_SKDR = 34
+const val MENU_TOSS_TBC = 35
+const val MENU_TELEMEDICINE = 36
+const val MENU_PETA_JATENG = 37
+const val MENU_EPPBGM = 38
+const val MENU_INFO_ALKES = 39

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.register.Register4Activity">
+
+    <View
+        android:id="@+id/reg_view_progress"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/brand2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.95" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toTopOf="@id/reg_btn_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_view_progress">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reg_tv_title"
+                style="@style/style_text_menu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Sesuai Domisili"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/reg_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="Alamat"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_title" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_address"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_address"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_address"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="Masukkan Alamat"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:minHeight="80dp"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="RT"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_address" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_rt"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/reg_til_rw"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_rt"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_rt"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RT"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_rw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="RW"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="@id/reg_til_rw"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_address" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_rw"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toRightOf="@id/reg_til_rt"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_rw"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_rw"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RW"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="Provinsi"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_rt" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_province"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconMode="dropdown_menu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_province"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/reg_mact_province"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownHeight="150dp"
+                    android:inputType="none"
+                    android:paddingStart="10dp"
+                    android:text="Pilih Provinsi" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="Kab/Kota"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_province" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_city"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconMode="dropdown_menu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_city"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/reg_mact_city"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownHeight="150dp"
+                    android:inputType="none"
+                    android:paddingStart="10dp"
+                    android:text="Pilih Kab/Kota" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="Kecamatan"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_city" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_district"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconMode="dropdown_menu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_district"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/reg_mact_district"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownHeight="150dp"
+                    android:inputType="none"
+                    android:paddingStart="10dp"
+                    android:text="Pilih Kecamatan" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_subdistrict"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="10dp"
+                android:text="Kelurahan"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_district" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_subdistrict"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconMode="dropdown_menu"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_subdistrict"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/reg_mact_subdistrict"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownHeight="150dp"
+                    android:inputType="none"
+                    android:paddingStart="10dp"
+                    android:text="Pilih Kelurahan" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reg_btn_next"
+        style="@style/ButtonDefault.Big"
+        android:layout_width="0dp"
+        android:layout_margin="10dp"
+        android:text="Simpan Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

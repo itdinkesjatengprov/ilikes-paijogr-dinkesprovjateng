@@ -1,0 +1,46 @@
+[
+  {
+    "id": "strttk-document-upload-01",
+    "license_id": "strttk-01",
+    "document": {
+      "id": "strttk-syarat-01",
+      "name": "KTP/SIM/Paspor",
+      "description": "Scan Asli Kartu Tanda Penduduk / Surat Izin Mengemudi / Paspor",
+      "type": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "document_type": "New",
+      "status": "ACTIVE",
+      "created_at": "2020-01-01 00:00:00",
+      "updated_at": "2020-01-01 00:00:00"
+    },
+    "link": "https://i.picsum.photos/id/88/700/1200.jpg?hmac=gOZj1kbBvE3xm-wiwPK34qOC563BLnN7lTHMEQ0pFmk",
+    "note": "",
+    "status": "APPROVED",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  },
+  {
+    "id": "strttk-document-upload-02",
+    "license_id": "strttk-01",
+    "document": {
+      "id": "strttk-syarat-02",
+      "name": "SURAT PERMOHONAN",
+      "description": "Scan Surat Permohonan",
+      "type": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "document_type": "New",
+      "status": "ACTIVE",
+      "created_at": "2020-01-01 00:00:00",
+      "updated_at": "2020-01-01 00:00:00"
+    },
+    "link": "https://i.picsum.photos/id/664/700/1200.jpg?hmac=M9242Memz90x4gSpLJIQ4mgOTYQ8QyFiDUyEw6LOgv4",
+    "note": "Untuk catatan kesalahan dari dokumen yang di upload,hanya admin/dinkes prov yang boleh mengubah status",
+    "status": "REJECTED",
+    "created_at": "2020-01-01 00:00:00",
+    "updated_at": "2020-01-01 00:00:00"
+  }
+]

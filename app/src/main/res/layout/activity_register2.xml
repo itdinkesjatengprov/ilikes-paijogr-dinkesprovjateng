@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.register.Register2Activity">
+
+    <View
+        android:id="@+id/reg_view_progress"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:background="@color/brand2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="@dimen/margin_padding_default"
+        app:layout_constraintBottom_toTopOf="@id/reg_btn_next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reg_view_progress">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/reg_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:text="Email"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_email"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_email"
+                app:layout_constraintVertical_chainStyle="packed">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_email"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Email"
+                    android:inputType="none"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_nik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:text="NIK"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_email" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_nik"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:helperText="Minimal 16 digits"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_nik">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_nik"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan NIK"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:text="Nama (Sesuai KTP)"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_nik" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_name"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_name"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Nama"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:text="Jenis Kelamin"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_name" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_gender"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconDrawable="@drawable/ic_chevron_down"
+                app:endIconMode="custom"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_gender">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_gender"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="Pilih Jenis Kelamin"
+                    android:inputType="none"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:text="Tanggal Lahir"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_gender" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_date"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconDrawable="@drawable/ic_calendar"
+                app:endIconMode="custom"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_date">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_date"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="dd/MM/yyyy"
+                    android:inputType="none"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:text="No HP"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_date" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_phone"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:helperText="Minimal 10 digits. Contoh: 8123456789"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_phone"
+                app:startIconDrawable="@drawable/ic_phone62">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_phone"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan No. HP"
+                    android:imeOptions="actionDone"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/reg_tv_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_padding_default"
+                android:layout_marginTop="@dimen/margin_padding_default"
+                android:text="Pekerjaan"
+                android:textColor="@color/ghost_grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_til_phone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reg_til_job"
+                style="@style/TextInputLayout.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:endIconDrawable="@drawable/ic_chevron_down"
+                app:endIconMode="custom"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reg_tv_job">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_mact_job"
+                    style="@style/TextInputEdittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:hint="Pilih Pekerjaan"
+                    android:inputType="none"
+                    android:paddingVertical="12dp"
+                    android:paddingStart="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/reg_btn_next"
+        style="@style/ButtonDefault.Big"
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/margin_padding_default"
+        android:text="Berikutnya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

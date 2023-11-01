@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.psc.PscReportActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_padding_default">
+
+        <TextView
+            android:id="@+id/apr_tv_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/apr_tv_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_tv_category_title"
+            tools:text="Kecelakaan" />
+
+        <LinearLayout
+            android:id="@+id/apr_ll_pick_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:background="@color/basic_soft_red"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_padding_default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_tv_category">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ambil Foto Kejadian"
+                android:textColor="@color/basic_red"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/apr_rv_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_ll_pick_photo"
+            tools:listitem="@layout/item_photo_psc" />
+
+        <TextView
+            android:id="@+id/apr_tv_accident_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Rincian Kejadian"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_rv_photo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/apr_til_accident_detail"
+            style="@style/TextInputLayout.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="5dp"
+            app:endIconMode="clear_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_tv_accident_detail_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/TextInputEdittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Tuliskan Rincian Kejadian"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:paddingVertical="12dp"
+                android:paddingStart="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/apr_tv_location_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="@dimen/margin_padding_default"
+            android:gravity="center_vertical"
+            android:text="Lokasi Kejadian"
+            android:textColor="@color/basic_red"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_til_accident_detail" />
+
+        <TextView
+            android:id="@+id/apr_tv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/margin_padding_default"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/apr_iv_gps"
+            app:layout_constraintTop_toBottomOf="@id/apr_tv_location_title" />
+
+        <ImageView
+            android:id="@+id/apr_iv_gps"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_gps"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/apr_tv_location"
+            app:tint="@color/basic_red" />
+
+        <Button
+            android:id="@+id/apr_btn_send"
+            style="@style/ButtonDefault.Big"
+            android:layout_width="0dp"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Kirim Laporan"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/barrier_location" />
+
+        <TextView
+            android:id="@+id/apr_tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_default"
+            android:text="Keluar PSC"
+            android:textColor="@color/basic_red"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apr_btn_send" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="apr_iv_gps, apr_tv_location" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

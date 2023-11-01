@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PAIJO GR</string>
+    <string name="app_subname">Peningkatan Akses Layanan dan Informasi Kesehatan Jateng Online dengan Gotong Royong</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="string_strttk">
+        Surat Tanda Registrasi Tenaga Teknis Kefarmasian\n\n
+        Requirement Pengurusan Baru :\n
+        (*) Surat keterangan sehat fisik dari dokter yang memiliki Surat Izin Praktik;\n
+        (*) Surat pernyataan memiliki tempat praktik;\n
+        (*) Pas foto berwarna terbaru ukuran 4 x 6 cm sebanyak 3 (tiga) lembar;\n
+        (*) Rekomendasi dari Kepala Dinas Kesehatan Kabupaten/Kota atau pejabat yang ditunjuk,dan\n
+        (*) Rekomendasi dari organisasi profesional\n\n
+        Requirement Perpanjangan : :\n
+        (*) Fotokopi STR/SIB yang masih berlaku dan dilegalisir
+    </string>
+
+    <string name="string_tubel">
+        Tubel (Tugas Belajar)\n\n
+        Syarat Pengurusan Baru\n
+        (1) SCAN Surat pengantar dari Instansi perihal permohonan Surat Rekomendasi Tugas Belajar yang ditujukan kepada Gubernur c.q. Kepala BKD Provinsi Jawa Tengah;\n
+        (2) SCAN Surat Rekomendasi dari Kepala OPD yang menerangkan bahwa program studi yang akan diambil merupakan kebutuhan OPD terkait;\n
+        (3) SCAN Surat keterangan uraian tugas calon peserta tugas belajar yang di tandatangani oleh Kepala OPD;\n
+        (4) SCAN Pengumuman atau surat keterangan resmi dari sekolah mengenai persyaratan yang mewajibkan melampirkan Surat Rekomendasi Tugas Belajar dari Kepala BKD Provinsi Jawa Tengah;\n
+        (5) SCAN Surat keterangan sumber biaya dari pihak pemberi beasiswa;\n
+        (6) SCAN Surat tidak pernah dijatuhi hukuman displin;\n
+        (7) SCAN Ijazah terakhir yang telah dilegalisir;\n
+        (8) SCAN SK pangkat terakhir yang telah dilegalisir;\n
+        (9) SCAN SK pengangkatan sebagai PNS yang telah dilegalisir;\n
+        (10) SCAN DP3/SKP 2 tahun terakhir yang telah dilegalisir;\n
+    </string>
+</resources>
