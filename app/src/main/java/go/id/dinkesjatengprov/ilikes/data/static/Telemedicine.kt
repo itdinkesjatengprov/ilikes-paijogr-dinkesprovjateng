@@ -8,7 +8,7 @@ import go.id.dinkesjatengprov.ilikes.data.model.TreatmentModel
 
 val telemedicineList = arrayListOf<TelemedicineModel>(
     TelemedicineModel(
-        name = "RSJD dr. RM. Soedjarwadi Provinsi Jawa Tengah",
+        name = "RSJD dr. RM. Soedjarwadi Prov Jateng",
         url = "https://telemedisin.rsjd-sujarwadi.com/",
         icon = R.drawable.img_telemedicine_soedjarwadi
     ),

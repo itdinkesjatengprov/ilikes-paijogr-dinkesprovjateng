@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import go.id.dinkesjatengprov.ilikes.adapter.TreatmentAdapter
 import go.id.dinkesjatengprov.ilikes.data.static.treatmentList
+import go.id.dinkesjatengprov.ilikes.data.static.treatmentListRsud
 import go.id.dinkesjatengprov.ilikes.databinding.ActivityTreatmentBinding
 import go.id.dinkesjatengprov.ilikes.ui.base.BaseActivity
 
@@ -24,6 +25,9 @@ class TreatmentActivity : BaseActivity<ActivityTreatmentBinding, TreatmentViewMo
 
         binding?.taRv?.layoutManager = LinearLayoutManager(this)
         binding?.taRv?.adapter = TreatmentAdapter(treatmentList)
+
+        binding?.taRvrsud?.layoutManager = LinearLayoutManager(this)
+        binding?.taRvrsud?.adapter = TreatmentAdapter(treatmentListRsud)
 
     }
 
