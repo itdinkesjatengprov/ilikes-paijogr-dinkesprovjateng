@@ -31,13 +31,20 @@ class TreatmentAdapter(val list: ArrayList<TreatmentModel>) :
         Glide.with(holder.itemView.context)
             .load(list.get(position).icon)
             .into(holder.binding.itIv)
-        if (list.get(position).url != null) {
+        if (list.get(position).url != null ) {
             holder.binding.itTvUrl.visibility = View.VISIBLE
-            holder.binding.itTvUrl.setOnClickListener {
-                val intent = Intent(holder.itemView.context, WebviewActivity::class.java)
-                intent.putExtra("URL_TITLE", list.get(position).name)
-                intent.putExtra("URL", list.get(position).url)
-                holder.itemView.context.startActivity(intent)
+            if(list.get(position).url!!.startsWith("https://play.google.com")){
+                holder.binding.itTvUrl.setOnClickListener {
+                    val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(list.get(position).url))
+                    holder.itemView.context.startActivity(browserIntent)
+                }
+            }else {
+                holder.binding.itTvUrl.setOnClickListener {
+                    val intent = Intent(holder.itemView.context, WebviewActivity::class.java)
+                    intent.putExtra("URL_TITLE", list.get(position).name)
+                    intent.putExtra("URL", list.get(position).url)
+                    holder.itemView.context.startActivity(intent)
+                }
             }
         }
     }
